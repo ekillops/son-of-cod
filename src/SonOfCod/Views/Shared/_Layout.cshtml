@@ -20,15 +20,6 @@
     <script src="~/Content/js/materialize-jquery.js" type="text/javascript"></script>
 </head>
     <body>
-        @*@if (User.IsInRole("Administrator"))
-        {
-            <ul id="dropdown1" class="dropdown-content">
-                <li><a asp-controller="Roles" asp-action="Index">Roles</a></li>
-                <li class="divider"></li>
-                <li><a asp-controller="Roles" asp-action="Create">Create</a></li>
-                <li><a asp-controller="Roles" asp-action="Assign">Assign</a></li>
-            </ul>
-        }*@
         <nav class="white">
             <div class="nav-wrapper">
                 <div class="container">
@@ -40,11 +31,8 @@
                             <li><span class="grey-text">@User.Identity.Name</span></li>
                             <li><a asp-controller="Account" asp-action="Logout">Log Out</a></li>
                             <li><a asp-controller="Home" asp-action="Profile">View Profile</a></li>
-                            @*@if (User.IsInRole("Administrator"))
-                            {
-                                
-                                <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Roles<i class="material-icons right">arrow_drop_down</i></a></li>
-                            }*@
+                            <li><a asp-controller="MailingList" asp-action="List">Mailing List</a></li>
+
 
                         }
                         else
@@ -59,6 +47,7 @@
                         {   
                             <li><a asp-controller="Account" asp-action="Logout">Log Out</a></li>
                             <li><a asp-controller="Home" asp-action="Profile">View Profile</a></li>
+                            <li><a asp-controller="MailingList" asp-action="List">Mailing List</a></li>
 
                         }
                         else

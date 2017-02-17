@@ -1,0 +1,27 @@
+﻿@{ 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Mailing List";
+}
+
+<h2>Mailing List</h2>
+
+<ul class="collection">
+ 
+@foreach (var contact in Model)
+{
+    <li class="collection-item avatar">
+        <i class="material-icons circle amber lighten-1">perm_identity</i>
+        <span class="title">
+            @if (contact.FirstName != null && contact.LastName != null)
+            {
+                @contact.FullName()
+            }
+        </span>
+        <br />
+        <p class="valign-center">
+            <i class="tiny material-icons">email</i>
+            &nbsp;@contact.Email
+        </p>
+    </li>
+}
+</ul>

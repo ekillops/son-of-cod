@@ -6,11 +6,11 @@ h3 {
     color: #424242; /*text-grey, text-darken-3*/ 
 }
 
-/*nav .brand-logo {
-    color: navy;
-}*/
-
-
+.valign-center {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+}
 
  /* label focus color */
    .input-field input[type=text]:focus + label {
