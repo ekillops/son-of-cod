@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Upload Photo";
+}
+
+<h3>Upload Photo</h3>
+
+<form asp-controller="Home" asp-action="UploadPhoto" method="post" enctype="multipart/form-data">
+    <div class="input-field">
+        <label for="Name">Name</label>
+        <input type="text" id="Name" name="Name" required />
+    </div>
+    <div class="file-field input-field">
+        <div class="btn light-blue darken-1">
+            <span>File</span>
+            <input type="file" name="Data">
+        </div>
+        <div class="file-path-wrapper">
+            <input class="file-path validate" type="text" placeholder="Upload image file">
+        </div>
+    </div>
+    <input type="submit" class="waves-effect waves-light btn blue darken-4" value="Upload" />
+</form>

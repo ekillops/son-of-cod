@@ -54,7 +54,7 @@
                     <a href="#" data-activates="hamburger" class="button-collapse right"><i class="material-icons">menu</i></a>
                     <ul class="side-nav" id="hamburger">
                         @if(User.Identity.IsAuthenticated)
-                        {
+                        {   
                             <li><a asp-controller="Account" asp-action="Logout">Log Out</a></li>
                             <li><a asp-controller="Home" asp-action="Profile">View Profile</a></li>
 
@@ -85,7 +85,7 @@
         <footer class="page-footer white">
             <div class="footer-copyright">
                 <div class="container right-align">
-                    <span class=" grey-text darken-1">© 2017 Son of Cod Seafood. All rights reserved.</span>
+                    <span class="grey-text darken-1">© 2017 Son of Cod Seafood. All rights reserved.</span>
                 </div>
             </div>
         </footer>

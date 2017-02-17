@@ -1,4 +1,4 @@
-﻿$(document).ready(function() {
+﻿$(document).ready(function () {
 
     $('.button-collapse').sideNav({
         menuWidth: 200, // Default is 300
@@ -10,4 +10,4 @@
     $('select').material_select();
     $(".dropdown-button").dropdown();
     $('.parallax').parallax();
-})
+});

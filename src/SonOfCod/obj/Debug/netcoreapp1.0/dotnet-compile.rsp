@@ -1,5 +1,5 @@
---temp-output:c:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\obj\Debug\netcoreapp1.0\
---out:c:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\bin\Debug\netcoreapp1.0\SonOfCod.dll
+--temp-output:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\obj\Debug\netcoreapp1.0\
+--out:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\bin\Debug\netcoreapp1.0\SonOfCod.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -200,15 +200,20 @@
 --reference:C:\Users\epicodus\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"c:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\obj\Debug\netcoreapp1.0\SonOfCoddotnet-compile.deps.json",SonOfCod.deps.json
-c:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Program.cs
-c:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Startup.cs
-c:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Controllers\AccountController.cs
-c:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Controllers\HomeController.cs
-c:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170217165047_Initial.cs
-c:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170217165047_Initial.Designer.cs
-c:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\ApplicationDbContextModelSnapshot.cs
-c:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Models\ApplicationDbContext.cs
-c:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Models\ApplicationUser.cs
-c:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\ViewModels\LoginViewModel.cs
-c:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\ViewModels\RegisterViewModel.cs
+--resource:"C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\obj\Debug\netcoreapp1.0\SonOfCoddotnet-compile.deps.json",SonOfCod.deps.json
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Program.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Startup.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Controllers\AccountController.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Controllers\BaseController.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Controllers\HomeController.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170217165047_Initial.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170217165047_Initial.Designer.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170217185949_AddPhotosAndContactsTables.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\20170217185949_AddPhotosAndContactsTables.Designer.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Migrations\ApplicationDbContextModelSnapshot.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Models\ApplicationDbContext.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Models\ApplicationUser.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Models\Contact.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\Models\Photo.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\ViewModels\LoginViewModel.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\SonOfCod\src\SonOfCod\ViewModels\RegisterViewModel.cs
