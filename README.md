@@ -19,9 +19,9 @@ _Requires .Net and Microsoft Sql Server_
 4. Restore dependencies.
 5. Open a command prompt, navigate to project folder and run `$dotnet restore`
 
-6. *Run `$dotnet ef database update` to migrate server
-  -or-
-   *In SQL Server Management Studio, open Db_Backup/SonOfCod.sql and execute the script.
+6. Run `$dotnet ef database update` to migrate server
+  _or_
+   In SQL Server Management Studio, open Db_Backup/SonOfCod.sql and execute the script.
 
 7. In Visual Studio run program by hitting 'Play' or 'F5'
 
