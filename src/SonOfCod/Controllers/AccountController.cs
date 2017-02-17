@@ -6,18 +6,22 @@ using System.Threading.Tasks;
 
 namespace SonOfCod.Controllers
 {
-    public class AccountController : Controller
+    public partial class AccountController : BaseController
     {
-        private readonly ApplicationDbContext _db;
-        private readonly UserManager<ApplicationUser> _userManager;
-        private readonly SignInManager<ApplicationUser> _signInManager;
-
-        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, ApplicationDbContext db)
+        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, ApplicationDbContext db) : base(userManager, signInManager, db)
         {
-            _userManager = userManager;
-            _signInManager = signInManager;
-            _db = db;
         }
+
+        //private readonly ApplicationDbContext _db;
+        //private readonly UserManager<ApplicationUser> _userManager;
+        //private readonly SignInManager<ApplicationUser> _signInManager;
+
+        //public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, ApplicationDbContext db)
+        //{
+        //    _userManager = userManager;
+        //    _signInManager = signInManager;
+        //    _db = db;
+        //}
         public IActionResult Index()
         {
             return View();
@@ -35,7 +39,7 @@ namespace SonOfCod.Controllers
             IdentityResult result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("Login");
             }
             else
             {
@@ -54,7 +58,7 @@ namespace SonOfCod.Controllers
             Microsoft.AspNetCore.Identity.SignInResult result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, isPersistent: true, lockoutOnFailure: false);
             if (result.Succeeded)
             {
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Home");
             }
             else
             {
@@ -65,7 +69,7 @@ namespace SonOfCod.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Home");
         }
     }
 }

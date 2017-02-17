@@ -174,7 +174,8 @@ namespace SonOfCod.Migrations
 
             modelBuilder.Entity("SonOfCod.Models.Contact", b =>
                 {
-                    b.Property<string>("Id");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
 
                     b.Property<string>("Email")
                         .IsRequired();
@@ -190,7 +191,8 @@ namespace SonOfCod.Migrations
 
             modelBuilder.Entity("SonOfCod.Models.Photo", b =>
                 {
-                    b.Property<string>("Id");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
 
                     b.Property<byte[]>("Data");
 

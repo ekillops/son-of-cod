@@ -11,7 +11,7 @@ namespace SonOfCod.Models
     public class Contact
     {
         [Key]
-        public string Id { get; set; }
+        public int Id { get; set; }
         [Required]
         [EmailAddress]
         public string Email { get; set; }

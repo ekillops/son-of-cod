@@ -1,5 +1,7 @@
 ﻿<!DOCTYPE html>
 @using System.Security.Claims
+@using SonOfCod.Controllers
+@using SonOfCod.Models
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -71,14 +73,16 @@
 
         @* Parallax one *@
         <div id="index-banner" class="parallax-container">
-            <div class="parallax"><img src="~/Content/img/boats.png" alt="Fishing Boats"></div>
+            <div class="parallax"><img src="~/Content/img/Boats.png" alt="Fishing Boats"></div>
         </div>
-
+        @* Main Body *@
+        <div class="container">
          @RenderBody()
+        </div>
 
         @* Parallax two *@
         <div class="parallax-container">
-            <div class="parallax"><img src="~/Content/img/nets.png" alt="Nets"></div>
+            <div class="parallax"><img src="~/Content/img/Nets.png" alt="Nets"></div>
         </div>
 
 

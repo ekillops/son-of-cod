@@ -7,6 +7,9 @@ namespace SonOfCod.Models
     [Table("Photos")]
     public class Photo
     {
+        public Photo()
+        {
+        }
         public Photo(string name, byte[] data)
         {
             Name = name;
@@ -14,7 +17,7 @@ namespace SonOfCod.Models
         }
 
         [Key]
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public byte[] Data { get; set; }
 
