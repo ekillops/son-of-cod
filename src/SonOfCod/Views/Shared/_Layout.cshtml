@@ -27,11 +27,11 @@
                 <li><a asp-controller="Roles" asp-action="Assign">Assign</a></li>
             </ul>
         }*@
-        <nav>
-            <div class="nav-wrapper white">
+        <nav class="white">
+            <div class="nav-wrapper">
                 <div class="container">
                     <a asp-controller="Home" asp-action="Index"
-                       class="brand-logo">Flickr Clone</a>
+                       class="brand-logo blue-text darken-4 d">Son of Cod Seafood</a>
                     <ul class="right hide-on-med-and-down">
                         @if (User.Identity.IsAuthenticated)
                         {
@@ -50,11 +50,9 @@
                             <li><a asp-controller="Account" asp-action="Signup">Signup</a></li>
                             <li><a asp-controller="Account" asp-action="Login">Log In</a></li>
                         }
-                        <li><a asp-controller="Photos" asp-action="Index">Photos</a></li>
                     </ul>
                     <a href="#" data-activates="hamburger" class="button-collapse right"><i class="material-icons">menu</i></a>
                     <ul class="side-nav" id="hamburger">
-                        <li><a asp-controller="Photos" asp-action="Index">Photos</a></li>
                         @if(User.Identity.IsAuthenticated)
                         {
                             <li><a asp-controller="Account" asp-action="Logout">Log Out</a></li>
