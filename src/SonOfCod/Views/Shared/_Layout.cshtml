@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     @* Materialize/CSS *@
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="~/Content/css/materialize.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/css/styles.css" rel="stylesheet" type="text/css"/>
@@ -30,7 +31,6 @@
                         {
                             <li><span class="grey-text">@User.Identity.Name</span></li>
                             <li><a asp-controller="Account" asp-action="Logout">Log Out</a></li>
-                            <li><a asp-controller="Home" asp-action="Profile">View Profile</a></li>
                             <li><a asp-controller="MailingList" asp-action="List">Mailing List</a></li>
 
 
@@ -46,7 +46,6 @@
                         @if(User.Identity.IsAuthenticated)
                         {   
                             <li><a asp-controller="Account" asp-action="Logout">Log Out</a></li>
-                            <li><a asp-controller="Home" asp-action="Profile">View Profile</a></li>
                             <li><a asp-controller="MailingList" asp-action="List">Mailing List</a></li>
 
                         }

@@ -12,6 +12,10 @@ h3 {
   align-items: center;
 }
 
+.brand-logo {
+    font-family: 'Roboto Slab', serif;
+}
+
  /* label focus color */
    .input-field input[type=text]:focus + label {
      color: #2196f3;
