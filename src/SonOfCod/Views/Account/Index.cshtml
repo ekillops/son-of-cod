@@ -1,0 +1,17 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Account";
+}
+
+@using System.Security.Claims
+
+<h2>Authentication with Identity</h2>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <p>Hello @User.Identity.Name</p>
+}
+else
+{
+    <p>No user logged in</p>
+}
